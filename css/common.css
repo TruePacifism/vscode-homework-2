@@ -1,0 +1,109 @@
+:root {
+    --accent-color: #2196F3;
+    --primary-text-color: #757575;
+    --main-heading-color: #212121;
+    --black-logo-color: #000000;
+    --secondary-background-color: #F5F4FA;
+    --inactive-icon-color: #AFB1B8;
+    --main-background-color: #FFFFFF;
+    --white-text-color: #FFFFFF;
+    --white-text-color-with-opacity: rgba(255, 255, 255, 0.6);
+    --footer-background-color: #2F303A;
+}
+body {
+    background-color: var(--main-background-color);
+}
+a:visited{
+    color: initial;
+}
+a {
+    text-decoration: none;
+    
+}
+ul {
+    list-style: none;
+}
+footer {
+    background-color: var(--footer-background-color);
+    color: var(--white-text-color);
+}
+footer .link {
+    color: var(--white-text-color-with-opacity);
+}
+footer .link:hover,
+footer .link:focus {
+    color: var(--white-text-color-with-opacity);
+    text-decoration: underline;
+}
+.nav-menu {
+
+}
+.button.primary,
+.button.active,
+.button.secondary:hover,
+.button.secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+.button.secondary
+.button.primary:hover,
+.button.primary:focus {
+    background-color: var(--main-background-color);
+    fill: var(--main-background-color);
+    color: var(--accent-color);
+}
+.nav-menu .button {
+    color: var(--main-heading-color);
+    background-color: var(--main-background-color);
+}
+.hero .button {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+.worker-card {
+    background-color: var(--main-background-color);
+}
+.section {
+    color: var(--primary-text-color);
+}
+.section .heading {
+    color: var(--main-heading-color);
+}
+.section.secondary {
+    background-color: var(--secondary-background-color);
+}
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+.nav-menu .button:hover,
+.nav-menu .button:focus,
+.nav-menu .button.active {
+    color: var(--accent-color);
+}
+.logo {
+    color: var(--black-logo-color);
+}
+.logo span {
+    color: var(--accent-color);
+}
+footer .logo {
+    color: var(--white-text-color);
+}
+.hero {
+    
+}
+.example-card {
+    background-color: var(--main-background-color);
+}
+.example-card .heading {
+    color: var(--main-heading-color);
+}
+.example-card-type {
+    color: var(--primary-text-color);
+}
+.example-card .description:hover,
+.example-card .description:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
