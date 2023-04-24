@@ -17,9 +17,15 @@
       <div class="container header">
         <a class="logo" href="./index.html"><span>Web</span> Studio</a>
         <ul class="nav-menu">
-          <li><a class="nav-button" href="">Студия</a></li>
-          <li><a class="nav-button" href="./po">Портфолио</a></li>
-          <li><a class="nav-button" href="">Контакты</a></li>
+          <li class="nav-menu-item">
+            <a class="nav-button" href="">Студия</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-button" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-button" href="">Контакты</a>
+          </li>
         </ul>
         <address>
           <a class="link" href=""
@@ -50,7 +56,7 @@
       <!-- Преимущества -->
       <section class="section features">
         <div class="container">
-          <ul>
+          <ul class="feature-list">
             <li class="section-features-item">
               <img src="./svg-pictures/antenna-1.svg" alt="" />
               <h3 class="heading">Внимание к деталям</h3>
@@ -91,20 +97,20 @@
       <section class="section doing">
         <div class="container">
           <h2 class="heading">Чем мы занимаемся</h2>
-          <ul>
-            <li>
+          <ul class="doing-list">
+            <li class="doing-list-item">
               <a href="">
                 <img src="./what-we-doing/desktop.png" alt="" />
                 Десктопные приложения
               </a>
             </li>
-            <li>
+            <li class="doing-list-item">
               <a href="">
                 <img src="./what-we-doing/mobile.png" alt="" />
                 Мобильные приложения
               </a>
             </li>
-            <li>
+            <li class="doing-list-item">
               <a href="">
                 <img src="./what-we-doing/design.png" alt="" />
                 Дизайнерские решения
@@ -118,7 +124,7 @@
       <section class="section secondary our-team">
         <div class="container">
           <h2 class="heading">Наша команда</h2>
-          <ul>
+          <ul class="team-list">
             <li class="worker-card">
               <div class="worker-card-container">
                 <img
@@ -199,33 +205,33 @@
       <section>
         <div class="container">
           <h2>Постоянные клиенты</h2>
-          <ul>
-            <li>
+          <ul class="company-clients">
+            <li class="company-clients-item">
               <a class="link" href=""
                 ><img src="./logo/logo-1.svg" alt="YA & CO"
               /></a>
             </li>
-            <li>
+            <li class="company-clients-item">
               <a class="link" href=""
                 ><img src="./logo/logo-2.svg" alt="Company Tag Line Here"
               /></a>
             </li>
-            <li>
+            <li class="company-clients-item">
               <a class="link" href=""
                 ><img src="./logo/logo-3.svg" alt="Company"
               /></a>
             </li>
-            <li>
+            <li class="company-clients-item">
               <a class="link" href=""
                 ><img src="./logo/logo-4.svg" alt="Foster Peters"
               /></a>
             </li>
-            <li>
+            <li class="company-clients-item">
               <a class="link" href=""
                 ><img src="./logo/logo-5.svg" alt="Brand"
               /></a>
             </li>
-            <li>
+            <li class="company-clients-item">
               <a class="link" href=""
                 ><img src="./logo/logo-6.svg" alt="Company Tag Line"
               /></a>
@@ -234,26 +240,35 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div class="container footer">
-        <a class="logo" href="./index.html"><span>Web</span> Studio</a>
-        <div class="contacts">
-          <address>г. Киев, пр-т Леси Украинки, 26</address>
+        <div class="footer-studio-info">
+          <a class="logo" href="./index.html"><span>Web</span> Studio</a>
+          <a class="link" href="">г. Киев, пр-т Леси Украинки, 26</a>
           <a class="link" href="">info@example.com</a>
           <a class="link" href="">+38 099 111 11 11</a>
         </div>
-        <div class="follow">
+        <div class="follow-us">
           <p><b>Присоединяйтесь</b></p>
-          <ul>
-            <li><a class="link" href="" aria-label="Инстаграм">Инст</a></li>
-            <li><a class="link" href="" aria-label="Твиттер">Твит</a></li>
-            <li><a class="link" href="" aria-label="Фейсбук">Фейс</a></li>
-            <li><a class="link" href="" aria-label="Линкед Ин">Линк</a></li>
+          <ul class="follow-us-links">
+            <li class="follow-us-links-item">
+              <a class="link" href="" aria-label="Инстаграм">Инст</a>
+            </li>
+            <li class="follow-us-links-item">
+              <a class="link" href="" aria-label="Твиттер">Твит</a>
+            </li>
+            <li class="follow-us-links-item">
+              <a class="link" href="" aria-label="Фейсбук">Фейс</a>
+            </li>
+            <li class="follow-us-links-item">
+              <a class="link" href="" aria-label="Линкед Ин">Линк</a>
+            </li>
           </ul>
         </div>
-        <p><b>Подпишитесь на рассылку</b></p>
-        <button class="button primary">Подписаться</button>
+        <div class="email-sub">
+          <p><b>Подпишитесь на рассылку</b></p>
+          <button class="button primary">Подписаться</button>
+        </div>
       </div>
     </footer>
   </body>

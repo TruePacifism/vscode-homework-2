@@ -78,6 +78,9 @@ footer .link:focus {
 }
 
 .nav-menu {
+  display: flex;
+  padding-top: 32px;
+  align-items: center;
 }
 .section.examples h2 {
   font-weight: 700;
@@ -91,6 +94,7 @@ footer .link:focus {
   font-size: 16px;
   line-height: 1.88;
 
+  text-align: left;
   letter-spacing: 0.03em;
 }
 .example-card .description {
@@ -132,6 +136,14 @@ footer .link:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
+.nav-menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-button {
+  display: inline-block;
+  height: 48px;
+  align-self: flex-end;
+}
 .nav-button.active,
 .nav-button:hover,
 .nav-button:focus,
@@ -165,6 +177,9 @@ footer .button {
 }
 .worker-card {
   background-color: var(--main-background-color);
+}
+.worker-card:not(:last-child) {
+  margin-right: 30px;
 }
 .section {
   color: var(--primary-text-color);
@@ -259,6 +274,7 @@ h1 {
   text-transform: uppercase;
 }
 .example-card {
+  width: 370px;
   background-color: var(--main-background-color);
 }
 .example-card .heading {
@@ -279,8 +295,18 @@ h1 {
   padding-top: 94px;
 }
 .container.header {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+  padding-top: 0;
+  min-height: 80px;
+}
+.container.header address {
+  margin-left: auto;
+}
+.container.header .logo {
+  align-self: center;
+  margin-right: 85px;
 }
 .hero > .container {
   text-align: center;
@@ -288,19 +314,30 @@ h1 {
 .hero > .container h1 {
   margin-bottom: 30px;
 }
+.section-features-item {
+  text-align: left;
+}
 .section-features-item img {
+  margin: auto;
+  display: block;
   margin-bottom: 30px;
+}
+.section-features-item:not(:last-child) {
+  margin-right: 30px;
 }
 .container.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.follow {
-}
 .container.footer .contacts > .link:nth-child(1n) {
   margin-bottom: 9px;
 }
 .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 .container h3 {
@@ -314,10 +351,30 @@ h1 {
   padding-top: 94px;
 }
 .filter-buttons {
+  display: flex;
+  align-items: normal;
   margin-bottom: 50px;
+  justify-content: center;
+}
+.filter-button {
+  width: auto;
+}
+.filter-button:not(:last-child) {
+  margin-right: 8px;
 }
 .filter-results {
+  display: flex;
   margin-bottom: 20px;
+  width: ((100% - 2 * 30px) / 3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.filter-results-item {
+  width: 370px;
+  margin-right: 30px;
+}
+.filter-results-item:nth-child(3n) {
+  margin-right: 0;
 }
 .example-card .heading {
   margin-bottom: 4px;
@@ -325,4 +382,61 @@ h1 {
 .example-card-name {
   text-align: left;
   padding: 24px, 20px;
+}
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+.footer-studio-info {
+  text-align: left;
+  display: block;
+  margin-right: 69px;
+}
+.footer-studio-info .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-studio-info .link {
+  display: block;
+}
+.footer-studio-info .link:not(:last-child) {
+  margin-bottom: 9px;
+}
+.follow-us b {
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.follow-us-links {
+  display: flex;
+}
+.follow-us-links-item {
+  margin-right: 10px;
+}
+.follow-us-links .link:not(:last-child) {
+  margin-right: 10px;
+}
+.email-sub {
+  margin-left: auto;
+  text-align: left;
+}
+.feature-list {
+  display: flex;
+}
+.doing-list {
+  display: flex;
+}
+.doing-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list {
+  display: flex;
+}
+.company-clients {
+  display: flex;
+  justify-content: space-between;
+}
+.company-clients-items:not(:last-child) {
+  margin-right: 30px;
 }
