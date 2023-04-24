@@ -1,185 +1,260 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title lang="en">Web Studio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="./css/common.css">
-        <link rel="stylesheet" href="./css/main-page.css">
-    </head>
-    <body>
-        <header>
-            <a class="logo" href="./index.html"><span>Web</span> Studio</a>
-            <ul class="nav-menu">
-                <li><a class="button" href="">Студия</a></li>
-                <li><a class="button" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="button" href="">Контакты</a></li>
-            </ul>
-            <address>
-                <a class="link" href=""><img src="./svg-pictures/envelope.svg" alt="">info@devstudio.com</a>
-                <a class="link" href=""><img src="./svg-pictures/smartphone.svg" alt="">+38 096 111 11 11</a>
-            </address>
-        </header>
-        
-        <main>
-            <!-- Hero -->
-            <section class="hero">
-                <h1>Эффективные решения <br> для вашего бизнеса</h1>
-                <a class="button" href="">Заказать услугу</a>
-            </section>
+  <head>
+    <title lang="en">Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main-page.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <a class="logo" href="./index.html"><span>Web</span> Studio</a>
+        <ul class="nav-menu">
+          <li><a class="nav-button" href="">Студия</a></li>
+          <li><a class="nav-button" href="./po">Портфолио</a></li>
+          <li><a class="nav-button" href="">Контакты</a></li>
+        </ul>
+        <address>
+          <a class="link" href=""
+            ><img
+              src="./svg-pictures/envelope.svg"
+              alt=""
+            />info@devstudio.com</a
+          >
+          <a class="link" href=""
+            ><img src="./svg-pictures/smartphone.svg" alt="" />+38 096 111 11
+            11</a
+          >
+        </address>
+      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1>
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <a class="button primary" href="">Заказать услугу</a>
+        </div>
+      </section>
 
-            <!-- Преимущества -->
-            <section class="section features">
-                <ul>
-                    <li>
-                        <img src="./svg-pictures/antenna-1.svg" alt="">
-                        <h3 class="heading">Внимание к деталям</h3>
-                        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li>
-                        <img src="./svg-pictures/clock-1.svg" alt="">
-                        <h3 class="heading">Пунктуальность</h3>
-                        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li>
-                        <img src="./svg-pictures/diagram-1.svg" alt="">
-                        <h3 class="heading">Планирование</h3>
-                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li>
-                        <img src="./svg-pictures/astronaut-1.svg" alt="">
-                        <h3 class="heading">Современные технологии</h3>
-                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-                </ul>
-            </section>
+      <!-- Преимущества -->
+      <section class="section features">
+        <div class="container">
+          <ul>
+            <li class="section-features-item">
+              <img src="./svg-pictures/antenna-1.svg" alt="" />
+              <h3 class="heading">Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="section-features-item">
+              <img src="./svg-pictures/clock-1.svg" alt="" />
+              <h3 class="heading">Пунктуальность</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="section-features-item">
+              <img src="./svg-pictures/diagram-1.svg" alt="" />
+              <h3 class="heading">Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="section-features-item">
+              <img src="./svg-pictures/astronaut-1.svg" alt="" />
+              <h3 class="heading">Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-            <!-- Объекты работы -->
-            <section class="section doing">
-                <h2 class="heading">Чем мы занимаемся</h2>
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src="./what-we-doing/desktop.png" alt="">
-                            Десктопные приложения
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./what-we-doing/mobile.png" alt="">
-                            Мобильные приложения
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./what-we-doing/design.png" alt="">
-                            Дизайнерские решения
-                        </a>
-                    </li>
-                </ul>
-            </section>
+      <!-- Объекты работы -->
+      <section class="section doing">
+        <div class="container">
+          <h2 class="heading">Чем мы занимаемся</h2>
+          <ul>
+            <li>
+              <a href="">
+                <img src="./what-we-doing/desktop.png" alt="" />
+                Десктопные приложения
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./what-we-doing/mobile.png" alt="" />
+                Мобильные приложения
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./what-we-doing/design.png" alt="" />
+                Дизайнерские решения
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-            <!-- Команда -->
-            <section class="section secondary our-team">
-                <h2 class="heading">Наша команда</h2>
-                <ul>
-                    <li class="worker-card">
-                        <img src="./team-members/team-1.png" alt="Фото Николая Кучеренко">
-                        <h3 class="heading">Николай Кучеренко</h3>
-                        <p>Product Designer</p>
-                        <ul>
-                            <li>
-                                <a class="link" href="" aria-label="Инстаграм">Инстаграм</a>
-                                <a class="link" href="" aria-label="Твиттер">Твиттер</a>
-                                <a class="link" href="" aria-label="Фейсбук">Фейсбук</a>
-                                <a class="link" href="" aria-label="Линкед Ин">Линкед Ин</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="worker-card">
-                        <img src="./team-members/team-2.png" alt="Фото Ольги Ивановой">
-                        <h3 class="heading">Ольга Иванова</h3>
-                        <p>Frontend Developer</p>
-                        <ul>
-                            <li>
-                                <a class="link" href="" aria-label="Инстаграм">Инстаграм</a>
-                                <a class="link" href="" aria-label="Твиттер">Твиттер</a>
-                                <a class="link" href="" aria-label="Фейсбук">Фейсбук</a>
-                                <a class="link" href="" aria-label="Линкед Ин">Линкед Ин</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="worker-card">
-                        <img src="./team-members/team-3.png" alt="Фото Андрея Шевченко">
-                        <h3 class="heading">Андрей Шевченко</h3>
-                        <p>Marketing</p>
-                        <ul>
-                            <li>
-                                <a class="link" href="" aria-label="Инстаграм">Инстаграм</a>
-                                <a class="link" href="" aria-label="Твиттер">Твиттер</a>
-                                <a class="link" href="" aria-label="Фейсбук">Фейсбук</a>
-                                <a class="link" href="" aria-label="Линкед Ин">Линкед Ин</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="worker-card">
-                        <img src="./team-members/team-4.png" alt="Фото Ивана Николаева">
-                        <h3 class="heading">Иван Николаев</h3>
-                        <p>UI Designer</p>
-                        <ul>
-                            <li>
-                                <a class="link" href="" aria-label="Инстаграм">Инстаграм</a>
-                                <a class="link" href="" aria-label="Твиттер">Твиттер</a>
-                                <a class="link" href="" aria-label="Фейсбук">Фейсбук</a>
-                                <a class="link" href="" aria-label="Линкед Ин">Линкед Ин</a>
-                            </li>
-                        </ul>
-                    </li>
+      <!-- Команда -->
+      <section class="section secondary our-team">
+        <div class="container">
+          <h2 class="heading">Наша команда</h2>
+          <ul>
+            <li class="worker-card">
+              <div class="worker-card-container">
+                <img
+                  src="./team-members/team-1.png"
+                  alt="Фото Николая Кучеренко"
+                />
+                <h3 class="worker-card-name">Николай Кучеренко</h3>
+                <p>Product Designer</p>
+                <ul class="worker-card-links">
+                  <li>
+                    <a class="link" href="" aria-label="Инстаграм">Инст</a>
+                    <a class="link" href="" aria-label="Твиттер">Твит</a>
+                    <a class="link" href="" aria-label="Фейсбук">Фейс</a>
+                    <a class="link" href="" aria-label="Линкед Ин">Линк</a>
+                  </li>
                 </ul>
-            </section>
+              </div>
+            </li>
+            <li class="worker-card">
+              <div class="worker-card-container">
+                <img
+                  src="./team-members/team-2.png"
+                  alt="Фото Ольги Ивановой"
+                />
+                <h3 class="worker-card-name">Ольга Иванова</h3>
+                <p>Frontend Developer</p>
+                <ul>
+                  <li>
+                    <a class="link" href="" aria-label="Инстаграм">Инст</a>
+                    <a class="link" href="" aria-label="Твиттер">Твит</a>
+                    <a class="link" href="" aria-label="Фейсбук">Фейс</a>
+                    <a class="link" href="" aria-label="Линкед Ин">Линк</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="worker-card">
+              <div class="worker-card-container">
+                <img
+                  src="./team-members/team-3.png"
+                  alt="Фото Андрея Шевченко"
+                />
+                <h3 class="worker-card-name">Андрей Шевченко</h3>
+                <p>Marketing</p>
+                <ul>
+                  <li>
+                    <a class="link" href="" aria-label="Инстаграм">Инст</a>
+                    <a class="link" href="" aria-label="Твиттер">Твит</a>
+                    <a class="link" href="" aria-label="Фейсбук">Фейс</a>
+                    <a class="link" href="" aria-label="Линкед Ин">Линк</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="worker-card">
+              <div class="worker-card-container">
+                <img
+                  src="./team-members/team-4.png"
+                  alt="Фото Ивана Николаева"
+                />
+                <h3 class="worker-card-name">Иван Николаев</h3>
+                <p>UI Designer</p>
+                <ul>
+                  <li>
+                    <a class="link" href="" aria-label="Инстаграм">Инст</a>
+                    <a class="link" href="" aria-label="Твиттер">Твит</a>
+                    <a class="link" href="" aria-label="Фейсбук">Фейс</a>
+                    <a class="link" href="" aria-label="Линкед Ин">Линк</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-            <!-- Компании-клиенты -->
-            <section>
-                <h2>Постоянные клиенты</h2>
-                <ul>
-                    <li>
-                        <a class="link" href=""><img src="./logo/logo-1.svg" alt="YA & CO"></a>
-                    </li>
-                    <li>
-                        <a class="link" href=""><img src="./logo/logo-2.svg" alt="Company Tag Line Here"></a>
-                    </li>
-                    <li>
-                        <a class="link" href=""><img src="./logo/logo-3.svg" alt="Company"></a>
-                    </li>
-                    <li>
-                        <a class="link" href=""><img src="./logo/logo-4.svg" alt="Foster Peters"></a>
-                    </li>
-                    <li>
-                        <a class="link" href=""><img src="./logo/logo-5.svg" alt="Brand"></a>
-                    </li>
-                    <li>
-                        <a class="link" href=""><img src="./logo/logo-6.svg" alt="Company Tag Line"></a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        
-        <footer>
-            <a class="logo" href="./index.html"><span>Web</span> Studio</a>
-            <address>г. Киев, пр-т Леси Украинки, 26</address>
-            <a class="link" href="">info@example.com</a>
-            <a class="link" href="">+38 099 111 11 11</a>
-            <p><b>Присоединяйтесь</b></p>
-            <ul>
-                <li><a class="link" href="" aria-label="Инстаграм">Инстаграм</a></li>
-                <li><a class="link" href="" aria-label="Твиттер">Твиттер</a></li>
-                <li><a class="link" href="" aria-label="Фейсбук">Фейсбук</a></li>
-                <li><a class="link" href="" aria-label="Линкед Ин">Линкед Ин</a></li>
-            </ul>
-            <p><b>Подпишитесь на рассылку</b></p>
-            <button class="button primary">Подписаться</button>
-        </footer>
-    </body>
+      <!-- Компании-клиенты -->
+      <section>
+        <div class="container">
+          <h2>Постоянные клиенты</h2>
+          <ul>
+            <li>
+              <a class="link" href=""
+                ><img src="./logo/logo-1.svg" alt="YA & CO"
+              /></a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./logo/logo-2.svg" alt="Company Tag Line Here"
+              /></a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./logo/logo-3.svg" alt="Company"
+              /></a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./logo/logo-4.svg" alt="Foster Peters"
+              /></a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./logo/logo-5.svg" alt="Brand"
+              /></a>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img src="./logo/logo-6.svg" alt="Company Tag Line"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer">
+        <a class="logo" href="./index.html"><span>Web</span> Studio</a>
+        <div class="contacts">
+          <address>г. Киев, пр-т Леси Украинки, 26</address>
+          <a class="link" href="">info@example.com</a>
+          <a class="link" href="">+38 099 111 11 11</a>
+        </div>
+        <div class="follow">
+          <p><b>Присоединяйтесь</b></p>
+          <ul>
+            <li><a class="link" href="" aria-label="Инстаграм">Инст</a></li>
+            <li><a class="link" href="" aria-label="Твиттер">Твит</a></li>
+            <li><a class="link" href="" aria-label="Фейсбук">Фейс</a></li>
+            <li><a class="link" href="" aria-label="Линкед Ин">Линк</a></li>
+          </ul>
+        </div>
+        <p><b>Подпишитесь на рассылку</b></p>
+        <button class="button primary">Подписаться</button>
+      </div>
+    </footer>
+  </body>
 </html>
