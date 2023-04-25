@@ -127,7 +127,6 @@ footer .link:focus {
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 29px;
-  min-width: 200px;
 }
 .button.primary,
 .button.active,
@@ -166,6 +165,9 @@ footer .link:focus {
   background-color: var(--accent-color);
   text-align: center;
   letter-spacing: 0.06em;
+
+  padding-left: 32px;
+  padding-right: 32px;
 }
 footer .button {
   font-weight: 700;
@@ -174,9 +176,6 @@ footer .button {
 
   text-align: center;
   letter-spacing: 0.06em;
-}
-.worker-card {
-  background-color: var(--main-background-color);
 }
 .worker-card:not(:last-child) {
   margin-right: 30px;
@@ -206,7 +205,6 @@ footer .button {
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 .section.our-team {
   font-weight: 400;
@@ -223,8 +221,8 @@ footer .button {
 .worker-card-name {
   color: var(--main-heading-color);
   font-weight: 500;
-  font-size: 1, 1875;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -233,6 +231,9 @@ footer .button {
   padding-bottom: 24px;
   margin-left: 0px;
   margin-right: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: var(--main-background-color);
 }
 .worker-card-container p {
   margin-bottom: 16px;
@@ -328,11 +329,13 @@ h1 {
 .container.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
 }
 .container.footer .contacts > .link:nth-child(1n) {
   margin-bottom: 9px;
 }
 .container {
+  box-sizing: border-box;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -356,8 +359,12 @@ h1 {
   margin-bottom: 50px;
   justify-content: center;
 }
-.filter-button {
-  width: auto;
+.filter-button .button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  cursor: pointer;
 }
 .filter-button:not(:last-child) {
   margin-right: 8px;
@@ -379,12 +386,26 @@ h1 {
 .filter-results-item:nth-child(3n) {
   margin-right: 0;
 }
+.example-card img {
+  display: block;
+}
+.example-card .description {
+  display: none;
+}
 .example-card .heading {
   margin-bottom: 4px;
 }
 .example-card-name {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom-left-radius: ;
+  display: block;
   text-align: left;
-  padding: 24px, 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .container.footer {
   padding-top: 60px;
@@ -429,6 +450,9 @@ h1 {
 }
 .doing-list {
   display: flex;
+}
+.doing-list-item {
+  text-transform: uppercase;
 }
 .doing-list-item:not(:last-child) {
   margin-right: 30px;
