@@ -418,9 +418,6 @@ footer {
 .client-list__link:focus {
   color: var(--accent-color);
 }
-.client-list__link {
-}
-
 .client-list__icon {
   width: 170px;
   height: 90px;
