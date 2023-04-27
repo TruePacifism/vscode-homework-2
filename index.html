@@ -58,9 +58,87 @@
           </button>
         </div>
         <div data-modal class="backdrop is-hidden">
-          <div class="modal-data">
-            <img src="./svg-pictures/astronaut-1.svg" alt="" />
-            <button data-modal-close class="data-modal-close">Закрыть</button>
+          <div class="service-order-form">
+            <h3 class="service-order-form__heading heading">
+              Оставьте свои данные, мы вам перезвоним
+            </h3>
+            <div class="service-order-form__name">
+              <label
+                class="service-order-form__name-label form-label"
+                for="name"
+                >Имя</label
+              >
+              <input
+                class="service-order-form__name-input form-input"
+                type="text"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="service-order-form__tel">
+              <label class="service-order-form__tel-label form-label" for="tel"
+                >Телефон</label
+              >
+              <input
+                class="service-order-form__tel-input form-input"
+                type="tel"
+                name="tel"
+                id="tel"
+              />
+            </div>
+            <div class="service-order-form__email">
+              <label
+                class="service-order-form__email-label form-label"
+                for="email"
+                >Почта</label
+              >
+              <input
+                class="service-order-form__email-input form-input"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="service-order-form__commentary">
+              <label
+                class="service-order-form__commentary-label form-label"
+                for="commentary"
+                >Комментарий</label
+              >
+              <input
+                class="service-order-form__commentary-input form-input"
+                type="row"
+                name="commentary"
+                id="commentary"
+              />
+            </div>
+            <div class="service-order-form__policy">
+              <input
+                class="service-order-form__policy-input"
+                type="checkbox"
+                name="policy"
+                id="policy"
+              />
+              <label
+                class="service-order-form__policy-label form-label"
+                for="policy"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="service-order-form__policy-link link" href="">
+                  Условия договора
+                </a></label
+              >
+            </div>
+            <div data-modal-close class="service-order-form__close-button">
+              <svg class="service-order-form__close-icon">
+                <use href="./logos.svg#icon-close"></use>
+              </svg>
+            </div>
+            <button
+              class="service-order-form__submit button-blue button"
+              type="submit"
+            >
+              Отправить
+            </button>
           </div>
         </div>
       </section>
@@ -494,12 +572,21 @@
         </div>
         <div class="email-sub">
           <b class="email-sub__message">Подпишитесь на рассылку</b>
-          <button class="email-sub__button button button-blue">
-            Подписаться
-            <svg class="email-sub__icon">
-              <use href="./icon-send-full.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+          <div class="email-sub__input-box">
+            <input
+              class="email-sub__input-field"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <button class="email-sub__button button button-blue">
+              Подписаться
+              <svg class="email-sub__icon">
+                <use href="./icon-send-full.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

@@ -50,7 +50,9 @@
         <div class="container">
           <ul class="filter-buttons-list">
             <li class="filter-buttons-list__item">
-              <button class="filter-buttons-list__button button button-blue">
+              <button
+                class="filter-buttons-list__button active-filter button button-blue"
+              >
                 Все
               </button>
             </li>
@@ -308,12 +310,21 @@
         </div>
         <div class="email-sub">
           <b class="email-sub__message">Подпишитесь на рассылку</b>
-          <button class="email-sub__button button button-blue">
-            Подписаться
-            <svg class="email-sub__icon">
-              <use href="./icon-send-full.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+          <div class="email-sub__input-box">
+            <input
+              class="email-sub__input-field"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <button class="email-sub__button button button-blue">
+              Подписаться
+              <svg class="email-sub__icon">
+                <use href="./icon-send-full.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
