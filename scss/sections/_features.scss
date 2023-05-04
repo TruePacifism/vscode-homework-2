@@ -51,7 +51,7 @@
 $icons: "antenna", "clock", "diagram", "astronaut";
 @each $icon in $icons {
   .#{$icon}::before {
-    background-image: url(../../svg-pictures/#{$icon}-1.svg),
+    background-image: url(../svg-pictures/#{$icon}-1.svg),
       linear-gradient(#f5f4fa, #f5f4fa);
   }
 }

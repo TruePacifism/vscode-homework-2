@@ -20,7 +20,7 @@
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../../hero-background/mobile/Header\ img.jpg);
+    url(../hero-background/mobile/Header\ img.jpg);
 
   @media screen and (-webkit-min-device-pixel-ratio: 1.5),
     (min-resolution: 144dpi) {
@@ -28,14 +28,14 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../hero-background/mobile/Header\ img@2x.jpg);
+      url(../hero-background/mobile/Header\ img@2x.jpg);
   }
   @media screen and (min-width: $mobile-width) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../hero-background/tablet/Header\ img.jpg);
+      url(../hero-background/tablet/Header\ img.jpg);
   }
   @media screen and (min-width: $mobile-width) and (-webkit-min-device-pixel-ratio: 1.5),
     (min-width: $mobile-width) and (min-resolution: 144dpi) {
@@ -43,14 +43,14 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../hero-background/tablet/Header\ img@2x.jpg);
+      url(../hero-background/tablet/Header\ img@2x.jpg);
   }
   @media screen and (min-width: $tablet-width) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../hero-background/desktop/Header\ img.jpg);
+      url(../hero-background/desktop/Header\ img.jpg);
   }
   @media screen and (min-width: $tablet-width) and (-webkit-min-device-pixel-ratio: 1.5),
     (min-width: $tablet-width) and (min-resolution: 144dpi) {
@@ -58,7 +58,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../hero-background/desktop/Header\ img@2x.jpg);
+      url(../hero-background/desktop/Header\ img@2x.jpg);
   }
 
   background-position: center;
