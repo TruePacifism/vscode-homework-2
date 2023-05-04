@@ -1,0 +1,107 @@
+.our-team-section {
+  @extend %section;
+  background-color: $secondary-background-color;
+}
+.our-team-container {
+  @extend %container;
+}
+
+.our-team__heading {
+  @extend %heading-2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+
+  margin-bottom: 30px + 15px;
+}
+.our-team__list {
+  @extend %decoration-clear;
+  margin: -15px;
+  padding: 0;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.our-team__card {
+  box-sizing: border-box;
+  display: block;
+  margin: 15px;
+  width: calc(100% - 30px);
+  max-width: 450px;
+  @media screen and (min-width: $tablet-width) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 270px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $main-background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  text-align: center;
+}
+.our-team__card-photo {
+  display: block;
+  width: 100%;
+  @media screen and (min-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+  }
+}
+.our-team__card-description {
+  background-color: $main-background-color;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+.our-team__card-name {
+  @extend %heading-3;
+  color: $main-heading-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
+}
+.our-team__card-job {
+  @extend %default-p;
+  margin-bottom: 16px;
+}
+.our-team__card-links {
+  @extend %decoration-clear;
+  @extend %flex-centered;
+  @extend %mp-clear;
+  margin-bottom: 24px;
+}
+.our-team__card-links_item {
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.our-team__card-links_link {
+  display: block;
+  border-radius: 50%;
+  height: 20px;
+  @extend %gray-icon-bg;
+  background-color: white;
+}
+.our-team__card-icon {
+  color: $inactive-icon-color;
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+  .our-team__card-links_link:hover &,
+  .our-team__card-links_link:focus & {
+    color: $accent-color;
+  }
+  @extend %gray-icon;
+}

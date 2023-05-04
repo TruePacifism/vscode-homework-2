@@ -1,0 +1,71 @@
+.hero__heading {
+  @extend %heading-1;
+  color: $white-text-color;
+  margin-bottom: 30px;
+  @media screen and (min-width: $desktop-width) {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+.hero__button {
+  @extend %blue-button-visual;
+}
+.hero {
+  padding-left: 15px;
+  padding-right: 15px;
+  @extend %flex-centered;
+  flex-direction: column;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../../hero-background/mobile/Header\ img.jpg);
+
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../hero-background/mobile/Header\ img@2x.jpg);
+  }
+  @media screen and (min-width: $mobile-width) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../hero-background/tablet/Header\ img.jpg);
+  }
+  @media screen and (min-width: $mobile-width) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: $mobile-width) and (min-resolution: 144dpi) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../hero-background/tablet/Header\ img@2x.jpg);
+  }
+  @media screen and (min-width: $tablet-width) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../hero-background/desktop/Header\ img.jpg);
+  }
+  @media screen and (min-width: $tablet-width) and (-webkit-min-device-pixel-ratio: 1.5),
+    (min-width: $tablet-width) and (min-resolution: 144dpi) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../../hero-background/desktop/Header\ img@2x.jpg);
+  }
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  @media screen and (min-width: $desktop-width) {
+    height: 600px;
+  }
+}

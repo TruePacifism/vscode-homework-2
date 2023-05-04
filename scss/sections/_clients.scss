@@ -1,0 +1,47 @@
+.client-section {
+  @extend %section;
+}
+.client-container {
+  @extend %container;
+}
+.client-list-heading {
+  @extend %heading-2;
+  margin-bottom: 30px + 15px;
+}
+.client-list {
+  @extend %mp-clear;
+  @extend %decoration-clear;
+  @extend %flex-centered;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.client-list__item {
+  color: $inactive-icon-color;
+  margin: 15px;
+  width: calc((100% - 4 * 15px) / 2);
+  @media screen and (min-width: $tablet-width) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+}
+.client-list__link {
+  @extend %link;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  box-sizing: border-box;
+  height: 90px;
+
+  @extend %flex-centered;
+  fill: currentColor;
+  border-width: 1px;
+  border-color: currentColor;
+  border-style: solid;
+  border-radius: 3.5px;
+}
+.client-list__icon {
+  display: block;
+}

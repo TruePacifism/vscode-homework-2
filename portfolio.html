@@ -2,69 +2,107 @@
 <html lang="ru">
   <head>
     <title lang="ru">Портфолио</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main-page.css" />
+    <link rel="stylesheet" href="./css/common.min.css" />
   </head>
 
   <body>
     <header>
-      <div class="container header">
-        <a class="logo" href="./index.html"
-          ><span class="logo__accent">Web</span> Studio</a
-        >
-        <ul class="nav-menu">
-          <li class="nav-menu__item">
-            <a class="nav-button" href="./index.html">Студия</a>
-          </li>
-          <li class="nav-menu__item">
-            <a class="nav-button active" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav-menu__item">
-            <a class="nav-button" href="">Контакты</a>
-          </li>
-        </ul>
-        <a class="header__email link" href=""
-          ><svg class="header__icon header__icon-email">
-            <use href="./symbol-defs.svg#icon-envelope"></use>
-            info@devstudio.com
-          </svg>
-          <p class="header__contact-info">info@devstudio.com</p></a
-        >
-        <a class="header__phone-number link" href=""
-          ><svg class="header__icon header__icon-phone">
-            <use href="./symbol-defs.svg#icon-smartphone"></use>
-            info@devstudio.com
-          </svg>
-          <p class="header__contact-info">info@devstudio.com</p></a
-        >
+      <div class="header-container">
+        <div class="nav-menu__container" data-menu>
+          <ul class="nav-menu">
+            <li class="nav-menu__item">
+              <a class="nav-button" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-button active" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-button" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="header__email" href=""
+            ><svg class="header__icon-email" width="16" height="21">
+              <use href="./symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            <p class="header__contact-info">info@devstudio.com</p></a
+          >
+          <a class="header__phone-number" href=""
+            ><svg class="header__icon-phone" width="16" height="21">
+              <use href="./symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            <p class="header__contact-info">+38 096 111 11 11</p></a
+          >
+        </div>
+        <div class="not-nav-menu__container">
+          <a class="header-logo" href="./index.html"
+            ><span class="logo__accent">Web</span> Studio</a
+          >
+          <button type="button" class="nav-menu__open-button" data-menu-button>
+            <svg width="40" height="40">
+              <use
+                class="nav-menu__close-icon"
+                href="./symbol-defs.svg#icon-menu-close"
+              ></use>
+              <use
+                class="nav-menu__open-icon"
+                href="./symbol-defs.svg#icon-menu-open"
+              ></use>
+            </svg>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu__item">
+              <a class="nav-button" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-button active" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-button" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <address class="header__contacts">
+            <a class="header__email" href=""
+              ><svg class="header__icon-email" width="16" height="21">
+                <use href="./symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              <p class="header__contact-info">info@devstudio.com</p></a
+            >
+            <a class="header__phone-number" href=""
+              ><svg class="header__icon-phone" width="16" height="21">
+                <use href="./symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              <p class="header__contact-info">+38 096 111 11 11</p></a
+            >
+          </address>
+        </div>
       </div>
     </header>
     <main>
-      <section class="section examples">
-        <div class="container">
+      <section class="examples-section">
+        <div class="examples-container">
           <ul class="filter-buttons-list">
             <li class="filter-buttons-list__item">
-              <button
-                class="filter-buttons-list__button active-filter button button-blue"
-              >
+              <button class="filter-buttons-list__button active-filter">
                 Все
               </button>
             </li>
             <li class="filter-buttons-list__item">
-              <button class="filter-buttons-list__button button">
-                Веб-сайты
-              </button>
+              <button class="filter-buttons-list__button">Веб-сайты</button>
             </li>
             <li class="filter-buttons-list__item">
-              <button class="filter-buttons-list__button button">
-                Приложения
-              </button>
+              <button class="filter-buttons-list__button">Приложения</button>
             </li>
             <li class="filter-buttons-list__item">
               <button class="filter-buttons-list__button button">Дизайн</button>
@@ -79,7 +117,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img src="./portfolio-cards/tech-crack.png" alt="" />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img.jpg  450w,
+                        ./portfolio-cards/tablet/img.jpg  354w,
+                        ./portfolio-cards/desktop/img.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -96,7 +165,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img src="./portfolio-cards/new-orlean.png" alt="" />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img-1.jpg  450w,
+                        ./portfolio-cards/tablet/img-1.jpg  354w,
+                        ./portfolio-cards/desktop/img-1.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x-1.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x-1.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x-1.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x-1.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -115,7 +215,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img src="./portfolio-cards/sea-food.png" alt="" />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img-2.jpg  450w,
+                        ./portfolio-cards/tablet/img-2.jpg  354w,
+                        ./portfolio-cards/desktop/img-2.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x-2.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x-2.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x-2.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x-2.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -134,7 +265,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img src="./portfolio-cards/prime.png" alt="" />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img-3.jpg  450w,
+                        ./portfolio-cards/tablet/img-3.jpg  354w,
+                        ./portfolio-cards/desktop/img-3.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x-3.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x-3.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x-3.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x-3.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -151,7 +313,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img src="./portfolio-cards/boxes.png" alt="" />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img-4.jpg  450w,
+                        ./portfolio-cards/tablet/img-4.jpg  354w,
+                        ./portfolio-cards/desktop/img-4.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x-4.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x-4.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x-4.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x-4.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -168,10 +361,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img
-                    src="./portfolio-cards/inspiration-has-no-borders.png"
-                    alt=""
-                  />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img-5.jpg  450w,
+                        ./portfolio-cards/tablet/img-5.jpg  354w,
+                        ./portfolio-cards/desktop/img-5.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x-5.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x-5.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x-5.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x-5.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -190,7 +411,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img src="./portfolio-cards/limited-edition.png" alt="" />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img-6.jpg  450w,
+                        ./portfolio-cards/tablet/img-6.jpg  354w,
+                        ./portfolio-cards/desktop/img-6.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x-6.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x-6.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x-6.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x-6.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -209,7 +461,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img src="./portfolio-cards/lab-tag.png" alt="" />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img-7.jpg  450w,
+                        ./portfolio-cards/tablet/img-7.jpg  354w,
+                        ./portfolio-cards/desktop/img-7.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x-7.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x-7.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x-7.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x-7.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -226,7 +509,38 @@
             <li class="filter-results__item">
               <a class="filter-results__link" href="">
                 <div class="filter-results__photo">
-                  <img src="./portfolio-cards/growing-business.png" alt="" />
+                  <picture>
+                    <!-- Картинка для экранов с плотностью пикселей 1x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img-8.jpg  450w,
+                        ./portfolio-cards/tablet/img-8.jpg  354w,
+                        ./portfolio-cards/desktop/img-8.jpg 370w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 1dppx)"
+                    />
+                    <!-- Картинка для экранов с плотностью пикселей 2x -->
+                    <source
+                      srcset="
+                        ./portfolio-cards/mobile/img@2x-8.jpg  900w,
+                        ./portfolio-cards/tablet/img@2x-8.jpg  708w,
+                        ./portfolio-cards/desktop/img@2x-8.jpg 740w
+                      "
+                      sizes="(max-width: 479px) 90vw, (max-width: 767px) 450px,
+                 (max-width: 1199px) 354px,
+                 370px"
+                      media="(max-resolution: 2dppx)"
+                    />
+                    <!-- Картинка по умолчанию для остальных случаев -->
+                    <img
+                      class=""
+                      src="./portfolio-cards/desktop/img@2x-8.jpg"
+                      alt="Фото Николая Кучеренко"
+                    />
+                  </picture>
                   <p class="filter-results__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -247,26 +561,22 @@
       </section>
     </main>
     <footer>
-      <div class="container footer">
+      <div class="footer-container">
         <div class="footer-studio-info">
-          <a
-            class="footer-studio-info__logo logo logo-white"
-            href="./index.html"
+          <a class="footer-studio-info__logo" href="./index.html"
             ><span class="logo__accent">Web</span> Studio</a
           >
           <ul class="footer-studio-info__contacts">
             <li class="footer-studio-info__contacts__item">
-              <a class="footer-studio-info__address link" href=""
+              <a class="footer-studio-info__address" href=""
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
             <li class="footer-studio-info__contacts__item">
-              <a class="footer-studio-info__mail link" href=""
-                >info@example.com</a
-              >
+              <a class="footer-studio-info__mail" href="">info@example.com</a>
             </li>
             <li class="footer-studio-info__contacts__item">
-              <a class="footer-studio-info__phone-number link" href=""
+              <a class="footer-studio-info__phone-number" href=""
                 >+38 099 111 11 11</a
               >
             </li>
@@ -276,33 +586,27 @@
           <b class="follow-us__message">Присоединяйтесь</b>
           <ul class="follow-us-links">
             <li class="follow-us-links__item">
-              <a
-                class="follow-us-links_link link"
-                href=""
-                aria-label="Инстаграм"
-                ><svg class="our-team__card-icon instagram">
+              <a class="follow-us-links_link" href="" aria-label="Инстаграм"
+                ><svg class="follow-us-links__icon">
                   <use href="./symbol-defs.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="follow-us-links__item">
-              <a class="follow-us-links_link link" href="" aria-label="Твиттер"
-                ><svg class="our-team__card-icon twitter">
+              <a class="follow-us-links_link" href="" aria-label="Твиттер"
+                ><svg class="follow-us-links__icon">
                   <use href="./symbol-defs.svg#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="follow-us-links__item">
-              <a class="follow-us-links_link link" href="" aria-label="Фейсбук"
-                ><svg class="our-team__card-icon facebook">
+              <a class="follow-us-links_link" href="" aria-label="Фейсбук"
+                ><svg class="follow-us-links__icon">
                   <use href="./symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
 
             <li class="follow-us-links__item">
-              <a
-                class="follow-us-links_link link"
-                href=""
-                aria-label="Линкед Ин"
-                ><svg class="our-team__card-icon linked-in">
+              <a class="follow-us-links_link" href="" aria-label="Линкед Ин"
+                ><svg class="follow-us-links__icon">
                   <use href="./symbol-defs.svg#icon-linked-in"></use></svg
               ></a>
             </li>
@@ -315,18 +619,19 @@
               class="email-sub__input-field"
               type="email"
               name="email"
-              id="email"
+              id="email-sub"
               placeholder="E-mail"
             />
-            <button class="email-sub__button button button-blue">
+            <button type="button" class="email-sub__button">
               Подписаться
               <svg class="email-sub__icon">
-                <use href="./icon-send-full.svg#icon-icon-send"></use>
+                <use href="./symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

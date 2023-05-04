@@ -1,0 +1,44 @@
+.section-doing {
+  @extend %section;
+  @media screen and (max-width: ($desktop-width)) {
+    display: none;
+  }
+}
+.doing-heading {
+  @extend %heading-2;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+.container-doing {
+  @extend %container;
+}
+.doing-list {
+  @extend %decoration-clear;
+  @extend %mp-clear;
+  display: flex;
+}
+.doing-list__item {
+  text-transform: uppercase;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.doing-list__container {
+  position: relative;
+}
+.doing-list__info {
+  @extend %heading-3;
+  color: $white-text-color;
+  position: absolute;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  display: block;
+  bottom: 0;
+  width: 100%;
+  color: $white-text-color;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

@@ -1,0 +1,209 @@
+footer {
+  background-color: $footer-background-color;
+}
+.footer-container {
+  @extend %container;
+  background-color: $footer-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @extend %flex-centered;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $desktop-width) {
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  @extend %default-font;
+}
+.footer-studio-info {
+  display: block;
+}
+.footer-studio-info__logo {
+  @extend %logo;
+  @extend %decoration-clear;
+  color: white;
+  &:visited {
+    color: white;
+  }
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-studio-info__contacts {
+  @extend %mp-clear;
+  @extend %decoration-clear;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+.footer-studio-info__contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-studio-info__address {
+  @extend %link;
+  color: white;
+  &:visited {
+    color: white;
+  }
+}
+.footer-studio-info__mail,
+.footer-studio-info__phone-number {
+  @extend %link;
+  color: rgba(255, 255, 255, 0.6);
+  &:visited {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.follow-us {
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+.follow-us__message {
+  display: block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: white;
+
+  margin-bottom: 20px;
+}
+.follow-us-links {
+  @extend %decoration-clear;
+  @extend %mp-clear;
+  display: flex;
+}
+.follow-us-links__item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.follow-us-links__item:hover,
+.follow-us-links__item:focus {
+  color: $white-text-color;
+  background-color: $accent-color;
+}
+.follow-us-links_link {
+  display: block;
+  height: 44px;
+  color: $white-text-color;
+  &:visited {
+    color: $white-text-color;
+  }
+}
+.follow-us-links__icon {
+  fill: currentColor;
+  height: 44px;
+  width: 44px;
+}
+.follow-us-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+.email-sub {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) {
+    align-items: center;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: fit-content;
+  }
+}
+.email-sub__message {
+  display: block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: white;
+
+  margin-bottom: 20px;
+  @media screen and (min-width: $desktop-width) {
+    margin-right: auto;
+  }
+}
+.email-sub__input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media screen and (min-width: $tablet-width) {
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+    width: fit-content;
+  }
+}
+.email-sub__input-field {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  // min-width: 450px;
+  min-height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  color: $white-text-color;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+.email-sub__input-field::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.email-sub__button {
+  @extend %blue-button-visual;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+.email-sub__icon {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  margin-left: 10px;
+}
